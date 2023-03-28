@@ -1,0 +1,73 @@
+.about {
+  background-color: #111;
+  background-size: cover;
+  background-position: top;
+  padding-top: 100px;
+}
+
+.feature-card {
+  width: 200px;
+  background: linear-gradient(0deg, #2e2e2e02, #0a443ad0);
+  outline: solid 0px #64ffdd;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-card:hover {
+  background: linear-gradient(0deg, #69ffde6c, #44ffd6);
+  background-size: cover;
+  color: rgb(11, 46, 38);
+  transform: scale(1.2);
+  outline: solid 10px rgba(23, 196, 159, 0);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-card-active {
+  background: linear-gradient(0deg, #69ffde6c, #44ffd6);
+  background-size: cover;
+  color: #0b2e26;
+  transform: scale(1.1);
+  outline: solid 10px rgba(23, 196, 159, 0);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  background: gray;
+  background-image: linear-gradient(to right, #ccc, gray, rgb(104, 103, 103));
+}
+
+.galleryItem .inline-text {
+  position: absolute;
+  transform: translate(-55px, 53px);
+  color: #ddd;
+}
+
+
+input[type="radio"]:checked+label .outer_border {
+  background-color: #b9ddff;
+  border: 1px solid #1e92ff;
+}
+input[type="radio"]:checked+label .inner_circle {
+  background-color: #0d6efd;
+}
+.inner_circle::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  top: 4.5px;
+  left: 5.2px;
+}
+input::-webkit-outer-spin-button,  input::-webkit-inner-spin-button {
+  -webkit-appearance:  none;
+  margin:  0;
+}
+.warning {
+  border: 1px solid red !important;
+}
